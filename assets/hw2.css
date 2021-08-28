@@ -1,0 +1,8 @@
+Books { background-color: grey; }
+
+Title  { font-weight: bold;
+        color: red; }
+
+Title, Author, Publisher { display: block; }
+
+Client:nth-child(odd) { background-color: lightblue; }
