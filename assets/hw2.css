@@ -3,6 +3,6 @@ Books { background-color: grey; }
 Title  { font-weight: bold;
         color: red; }
 
-Title, Author, Publisher { display: block; }
+Book { display: block; }
 
-Client:nth-child(odd) { background-color: lightblue; }
+Book:nth-child(odd) { background-color: lightblue; }
