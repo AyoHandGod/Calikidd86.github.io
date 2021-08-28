@@ -1,8 +1,8 @@
-Books { background-color: grey; }
+Books { background-color: lightgray; }
 
 Title  { font-weight: bold;
         color: red; }
 
-Book { display: block; }
+Book, Title, Author, Publisher { display: block; }
 
 Book:nth-child(odd) { background-color: lightblue; }
