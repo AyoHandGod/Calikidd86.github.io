@@ -18,16 +18,16 @@
                     <xsl:for-each select="Accounts/Client">
                         <tr>
                             <td>
-                                <xsl:value-of select="Accounts/Client/Name"/>
+                                <xsl:value-of select="Name"/>
                             </td>
                             <td>
-                                <xsl:value-of select="Accounts/Client/Phone"/>
+                                <xsl:value-of select="Phone"/>
                             </td>
                             <td>
-                                <xsl:value-of select="Accounts/Client/E-Mail" />
+                                <xsl:value-of select="E-Mail" />
                             </td>
                             <td>
-                                <xsl:value-of select="Accounts/Client/Account_Total" />
+                                <xsl:value-of select="Account_Total" />
                             </td>
                         </tr>
                     </xsl:for-each>
