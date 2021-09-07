@@ -8,18 +8,26 @@
 
             <body>
                 <h1>List of Clients</h1>
-                <table border="1">
-                    <tr bgcolor="#9acd32">
-                        <th>Title</th>
-                        <th>Artist</th>
+                <table border="1" bordercolor="#9acd32">
+                    <tr>
+                        <th>Name</th>
+                        <th>Phone</th>
+                        <th>Email</th>
+                        <th>Account Total</th>
                     </tr>
                     <xsl:for-each select="Accounts/Client">
                         <tr>
                             <td>
-                                <xsl:value-of select="title"/>
+                                <xsl:value-of select="Accounts/Client/Name"/>
                             </td>
                             <td>
-                                <xsl:value-of select="artist"/>
+                                <xsl:value-of select="Accounts/Client/Phone"/>
+                            </td>
+                            <td>
+                                <xsl:value-of select="Accounts/Client/E-Mail" />
+                            </td>
+                            <td>
+                                <xsl:value-of select="Accounts/Client/Account_Total" />
                             </td>
                         </tr>
                     </xsl:for-each>
