@@ -26,11 +26,17 @@
                             <td>
                                 <xsl:value-of select="E-mail" />
                             </td>
-                            <td>
-                                <xsl:value-of select="Account_Total" />
-                            </td>
+                            <xsl:choose>
+                                <xsl:when test="Account_total &lt; 80000"/>
+                                    <td text-color="red" font-weight="bold">
+                                        <xsl:value-of select="Account_total"/>
+                                    </td>
+                                <xsl:otherwise/>
+                                    <td>
+                                        <xsl:value-of select="Account_total"/>
+                                    </td>
+                            </xsl:choose>
                         </tr>
-                    </xsl:for-each>
                 </table>
             </body>
         </html>
