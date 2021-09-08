@@ -35,6 +35,7 @@
                             </xsl:otherwise>
                         </xsl:choose>
                     </tr>
+                    </xsl:for-each>
                 </table>
             </body>
         </html>
