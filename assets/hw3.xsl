@@ -4,7 +4,6 @@
         <html>
             <head>
                 <title>Homework 3</title>
-                <style> </style>
             </head>
 
             <body>
