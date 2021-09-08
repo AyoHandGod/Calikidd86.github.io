@@ -28,7 +28,7 @@
                         </td>
                         <xsl:choose>
                             <xsl:when test="Account_Total &lt;= 80000">
-                                <td style="font-weight:bold; color:red; "><xsl:value-of select="Account_total"/></td>
+                                <td style="font-weight:bold; color:red; "><xsl:value-of select="Account_Total"/></td>
                             </xsl:when>
                             <xsl:otherwise>
                                 <td><xsl:value-of select="Account_Total"/></td>
