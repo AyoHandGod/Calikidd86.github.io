@@ -18,10 +18,10 @@
                 </div>
                 <p>We are a very young financial manager company and we are proud of our clients</p>
                 <p>We have started with 1 client a bit more than 10 years ago and we now have
-                    <xsl:value-of select="count(//Client)"/> clients!
+                    <xsl:value-of select="count(/Client)"/> clients!
                 </p>
                 <p>These are our clients:
-                    <xsl:for-each select="//Client/Name">
+                    <xsl:for-each select="/Client/Name">
                         <xsl:choose>
                             <xsl:when test="(//Client)[last()]">
                                 <xsl:value-of select="First"/><xsl:text> </xsl:text> <xsl:value-of select="Last"/>,
