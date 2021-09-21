@@ -21,7 +21,7 @@
                     <xsl:value-of select="count(//Client)"/> clients!
                 </p>
                 <p>These are our clients:
-                    <xsl:for-each select="/Client/Name">
+                    <xsl:for-each select="//Client/Name">
                         <xsl:choose>
                             <xsl:when test="//Client[last()]">
                                 <p>, and <xsl:value-of select="First"/> <xsl:value-of select="Last"/> </p>
