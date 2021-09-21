@@ -28,7 +28,7 @@
                     </xsl:for-each>
                 </p>
                 <p>
-                    <xsl:value-of select="Client/Name[position() = last()]"/>
+                    <xsl:value-of select="count(//Client/Years[number(node()) >= 7])"/>of our clients have been with us for more than 7 years!
                 </p>
             </body>
         </html>
