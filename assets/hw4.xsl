@@ -24,10 +24,10 @@
                     <xsl:for-each select="//Client/Name">
                         <xsl:choose>
                             <xsl:when test="(//Client)[last()]">
-                                <p>, and <xsl:value-of select="First"/> <xsl:value-of select="Last"/> </p>
+                                <xsl:value-of select="First"/><xsl:text> </xsl:text> <xsl:value-of select="Last"/>,
                             </xsl:when>
                             <xsl:otherwise>
-                                <xsl:value-of select="First"/><xsl:text> </xsl:text> <xsl:value-of select="Last"/>,
+                                <p>, and <xsl:value-of select="First"/> <xsl:value-of select="Last"/> </p>
                             </xsl:otherwise>
                         </xsl:choose>
                     </xsl:for-each>
