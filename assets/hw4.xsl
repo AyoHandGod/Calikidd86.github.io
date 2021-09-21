@@ -21,13 +21,13 @@
                     <xsl:value-of select="count(//Client)"/> clients!
                 </p>
                 <p>These are our clients:
-                    <xsl:for-each select="//Client/Name">
+                    <xsl:for-each select="/Client/Name">
                         <xsl:choose>
-                            <xsl:when test="//Client[position() != last()]">
-                                <xsl:value-of select="First"/><xsl:text> </xsl:text> <xsl:value-of select="Last"/>,
+                            <xsl:when test="//Client[last()]">
+                                <p>, and <xsl:value-of select="First"/> <xsl:value-of select="Last"/> </p>
                             </xsl:when>
                             <xsl:otherwise>
-                                <p>, and <xsl:value-of select="First"/> <xsl:value-of select="Last"/> </p>
+                                <xsl:value-of select="First"/><xsl:text> </xsl:text> <xsl:value-of select="Last"/>,
                             </xsl:otherwise>
                         </xsl:choose>
                     </xsl:for-each>
