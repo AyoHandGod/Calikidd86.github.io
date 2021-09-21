@@ -23,7 +23,7 @@
                 <p>These are our clients:
                     <xsl:for-each select="//Client/Name">
                         <xsl:choose>
-                            <xsl:when test="//Client[last()]">
+                            <xsl:when test="(//Client)[last()]">
                                 <p>, and <xsl:value-of select="First"/> <xsl:value-of select="Last"/> </p>
                             </xsl:when>
                             <xsl:otherwise>
