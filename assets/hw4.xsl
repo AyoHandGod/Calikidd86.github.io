@@ -4,7 +4,12 @@
     <xsl:template match="/">
         <html>
             <head>
-
+                <style>
+                    .image-box {
+                        display: flex;
+                        justify-content:center;
+                    }
+                </style>
             </head>
             <body>
                 <h1>ABC Financial Startup</h1>
