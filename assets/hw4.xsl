@@ -13,11 +13,18 @@
               <p>We have started with 1 client a bit more than 10 years ago and we now have
               <xsl:value-of select="count(//Client)"/> clients! </p>
               <p>These are our clients:
-                  <xsl:for-each select="//Client/Name[position()!=last()]">
+                  <xsl:for-each select="//Client/Name">
+                      <xsl:choose>
+                          <xsl:when test="//Client/Name[position() > last()]">
+                              <p><xsl:value-of select="First"/> <xsl:value-of select="Last"/>,</p>
+                          </xsl:when>
+                          <xsl:otherwise>
+                              <p>, and <xsl:value-of select="First"/> <xsl:value-of select="Last"/> </p>
+                          </xsl:otherwise>
+                      </xsl:choose>
                   <xsl:value-of select="First"/><xsl:text> </xsl:text> <xsl:value-of select="Last"/>,
                   </xsl:for-each>
               </p>
-              <p></p>
 
           </body>
       </html>
