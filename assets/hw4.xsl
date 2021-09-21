@@ -18,7 +18,7 @@
                 <p>These are our clients:
                     <xsl:for-each select="//Client/Name">
                         <xsl:choose>
-                            <xsl:when test="//Client[position() &lt; last() - 1]">
+                            <xsl:when test="//Client[position() != last()]">
                                 <xsl:value-of select="First"/><xsl:text> </xsl:text> <xsl:value-of select="Last"/>,
                             </xsl:when>
                             <xsl:otherwise>
