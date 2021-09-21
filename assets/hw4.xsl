@@ -18,7 +18,7 @@
                 <p>These are our clients:
                     <xsl:for-each select="//Client/Name">
                         <xsl:choose>
-                            <xsl:when test="//Client[position() &lt; last()]">
+                            <xsl:when test="//Client[position() &lt; last() - 1]">
                                 <xsl:value-of select="First"/><xsl:text> </xsl:text> <xsl:value-of select="Last"/>,
                             </xsl:when>
                             <xsl:otherwise>
@@ -28,7 +28,7 @@
                     </xsl:for-each>
                 </p>
                 <p>
-                    <xsl:value-of select="count(//Client/Years[number(node()) >= 7])"/>of our clients have been with us for more than 7 years!
+                    <xsl:value-of select="count(//Client/Years[number(node()) >= 7])"/> of our clients have been with us for more than 7 years!
                 </p>
             </body>
         </html>
