@@ -5,3 +5,7 @@ state {
     display: block;
     background-color: blue;
 }
+
+west|state {
+    background-color: green;
+}
