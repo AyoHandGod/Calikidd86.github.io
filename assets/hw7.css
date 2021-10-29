@@ -1,7 +1,7 @@
 @namespace west url("hw7.xml");
 @namespace east url("hw7.xml");
 
-state { display: block; }
-west|state { background-color: green; }
-
-east|state { background-color: purple; }
+state {
+    display: block;
+    background-color: blue;
+}
