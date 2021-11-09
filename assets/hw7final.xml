@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/css" href="hw7.css"?>
-<states xmlns="http://www.gov.org/west" xmlns:east="http:/www.gov.org/east">
+<states xmlns="hw7.xml" xmlns:east="hw7a.xml">
 <state>
     <name>California</name>
     <capital>Sacramento</capital>
