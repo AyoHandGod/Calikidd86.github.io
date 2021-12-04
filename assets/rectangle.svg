@@ -1,0 +1,4 @@
+<?xml version="1.0" ?>
+<svg baseProfile="full" xmlns="http://www.w3.org/2000/svg" width="500px" height="250px">
+    <rect x="50" y="50" width="200px" height="100px" fill="yellow" stroke-width="5px" stroke="blue" />
+</svg>

@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<svg baseProfile="full" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <radialGradient id="gradient">
+            <stop stop-color = "blue" offset = "0%" />
+            <stop stop-color = "green" offset = "100%" />
+        </radialGradient>
+    </defs>
+    <circle cy="100px" cx="100px" fill="url('#gradient')" r="70px" />
+</svg>
